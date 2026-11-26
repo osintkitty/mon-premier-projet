@@ -1,0 +1,58 @@
+/* Couleurs et polices, réutilisables partout */
+:root {
+    --bg: #fafaf7;
+    --text: #222;
+    --muted: #666;
+    --accent: #1793d1; /* bleu Arch Linux */
+    --border: #e2e2dc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 3rem 1.25rem;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+h1 {
+    margin: 0 0 1.5rem;
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+h2 {
+    margin: 2.5rem 0 0.5rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 2px solid var(--accent);
+    font-size: 1.5rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+/* Mode sombre automatique si le système est en dark mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #1a1b1e;
+        --text: #e6e6e6;
+        --muted: #999;
+        --border: #333;
+    }
+}
