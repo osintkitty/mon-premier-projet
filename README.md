@@ -7,15 +7,23 @@
 
 ## Bloc de code
 git config --global
+
                     user.name
+
                     user.email
+
                     --list
+
                                --unset (si je fais des erreurs)
+
                     init.defaultBranch main
+
                     core.editor nvim
+
 cd ~/
 
 git init
+
 git status
 
 ect..
